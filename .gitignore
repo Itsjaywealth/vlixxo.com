@@ -1,0 +1,38 @@
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.secrets
+
+# Keys, certificates, credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+credentials.*
+secrets.*
+service-account*.json
+firebase-adminsdk*.json
+google-services.json
+GoogleService-Info.plist
+.npmrc
+.pypirc
+
+# Local tooling and OS files
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Dependencies and build output
+node_modules/
+.next/
+dist/
+build/
+coverage/
