@@ -60,7 +60,15 @@ See [docs/architecture.md](docs/architecture.md) for the public-safe architectur
 
 ## Screenshots
 
-Public storefront screenshots are available in [screenshots/](screenshots/).
+| Storefront | Shop |
+|---|---|
+| ![Vlixxo storefront](screenshots/home.png) | ![Vlixxo shop](screenshots/shop.png) |
+
+| Categories | Mobile |
+|---|---|
+| ![Vlixxo categories](screenshots/categories.png) | ![Vlixxo mobile storefront](screenshots/mobile-home.png) |
+
+All images are captured from anonymous, public-facing Vlixxo pages only.
 
 ## Security
 

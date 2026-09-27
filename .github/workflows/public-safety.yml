@@ -1,0 +1,49 @@
+name: Public safety
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  boundary-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch exact revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --quiet "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" repo
+          cd repo
+          git fetch --quiet origin "$GITHUB_SHA" --depth=1
+          git checkout --quiet --detach "$GITHUB_SHA"
+
+      - name: Validate public repository boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd repo
+
+          bad_files="$(git ls-files | grep -E '(^|/)(\.env($|\.)|.*\.(pem|key|p12|pfx)|credentials\.json$|service-account.*\.json$)' | grep -vE '(^|/)\.env\.example$' || true)"
+          if [ -n "$bad_files" ]; then
+            echo "Forbidden secret/config filenames are tracked."
+            printf '%s\n' "$bad_files"
+            exit 1
+          fi
+
+          if [ ! -f .env.example ]; then
+            echo ".env.example is required."
+            exit 1
+          fi
+
+          if grep -Ev '^[[:space:]]*(#.*|[A-Z0-9_]+=[[:space:]]*)?$' .env.example | grep -q .; then
+            echo ".env.example must contain placeholder names only."
+            exit 1
+          fi
+
+          grep -Fq 'https://www.vlixxo.com' README.md
+          grep -Fq 'production source' README.md
+          echo "Public repository boundary checks passed."
