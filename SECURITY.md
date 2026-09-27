@@ -1,24 +1,15 @@
 # Security Policy
 
-## Reporting a security issue
+## Private reporting
 
-Please do not publish credentials, tokens, private keys, customer information, vulnerability details, or production configuration in a public issue.
+Please do not publish sensitive security reports in public GitHub issues.
 
-For security-sensitive reports, use a private contact channel associated with BrandVerse Ventures or Vlixxo.
+Use GitHub's **Report a vulnerability** private reporting flow for this repository when it is available. If that option is unavailable, contact **info@vlixxo.com** with the subject **Security report**.
 
-## Repository policy
+Share only the information needed to reproduce the issue and avoid including customer information.
 
-This public repository must not contain production secrets or confidential operational data.
+## Public repository boundary
 
-Before publishing changes, contributors should verify that commits do not contain:
+This repository is limited to public-safe product documentation and approved public materials. Production configuration and private operational information remain outside this repository.
 
-- API keys or access tokens
-- OAuth credentials or refresh tokens
-- Private keys or certificates
-- Database connection strings or passwords
-- Webhook signing secrets
-- Supplier or payment-provider credentials
-- Customer, order, or private analytics data
-- Production environment files
-
-If a secret is ever committed, treat it as compromised: revoke or rotate it first, then remove it from repository history.
+If sensitive material is ever committed, contain the exposure first, remove it from history, re-scan the repository, and verify the live service before considering the issue closed.
