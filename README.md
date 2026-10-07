@@ -4,7 +4,7 @@
 
 **Live product:** https://www.vlixxo.com
 
-Vlixxo is part of the **BrandVerse Ventures** ecosystem. This repository is its public GitHub home and is intentionally limited to information that is safe to publish.
+Vlixxo is part of the **BrandVerse Ventures Limited** ecosystem (RC 9905604). This repository is its public GitHub home and is intentionally limited to information that is safe to publish.
 
 ## About
 
@@ -88,9 +88,9 @@ See [SECURITY.md](SECURITY.md) and [docs/security-boundary.md](docs/security-bou
 
 [.env.example](.env.example) contains variable names/placeholders only. It is documentation, not a production configuration file.
 
-## BrandVerse Ventures
+## BrandVerse Ventures Limited
 
-Vlixxo is built and operated within the BrandVerse Ventures product ecosystem.
+Vlixxo is built and operated within the BrandVerse Ventures Limited product ecosystem (RC 9905604).
 
 ## Repository scope
 
