@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-08
+
+- Clarified that storefront screenshots show a region-specific view; Vlixxo serves shoppers across supported markets with region-based pricing and delivery details.
+
 ## 2026-09-27
 
 - Expanded the public Vlixxo project documentation.

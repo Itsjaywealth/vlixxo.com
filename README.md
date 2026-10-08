@@ -68,7 +68,7 @@ See [docs/architecture.md](docs/architecture.md) for the public-safe architectur
 |---|---|
 | ![Vlixxo categories](screenshots/categories.png) | ![Vlixxo mobile storefront](screenshots/mobile-home.png) |
 
-All images are captured from anonymous, public-facing Vlixxo pages only.
+All images are captured from anonymous, public-facing Vlixxo pages only. Prices and delivery details in the captures reflect the regional view of the capture session; see [screenshots/README.md](screenshots/README.md).
 
 ## Security
 
