@@ -4,7 +4,7 @@ This document describes Vlixxo at a deliberately high level. It is not an infras
 
 ## Application shape
 
-The production product uses a React/Vite customer interface backed by a Node.js/Express application layer. Product and catalogue data are persisted in a MongoDB-backed data layer, while commerce flows integrate with Shopify for supported checkout operations.
+The production product uses a single-page customer interface backed by a JavaScript application and API layer. Product and catalogue data are persisted in a document database, while commerce flows integrate with a hosted commerce platform for supported checkout operations.
 
 ## Public request flow
 
