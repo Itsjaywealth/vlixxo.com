@@ -28,12 +28,14 @@ The current product includes:
 
 ## Technology
 
-At a high level, the production application uses:
+Verified high-level technologies used by the production application include:
 
-- A single-page storefront with a fast build pipeline
-- A JavaScript application and API layer
-- A document database for catalogue data
-- A hosted commerce and checkout integration
+- React 18
+- Vite
+- Node.js
+- Express
+- MongoDB with Mongoose
+- Shopify commerce integration
 
 Production credentials, supplier authentication, payment secrets, database credentials and deployment configuration are deliberately excluded from this repository.
 
@@ -44,14 +46,14 @@ The public architecture is intentionally documented at a high level:
     Shopper
       |
       v
-    Storefront (single-page app)
+    React / Vite storefront
       |
       v
-    Application and API layer
+    Node.js / Express application layer
       |
       +--> Catalogue and product data
       +--> Search and visual-search services
-      +--> Hosted commerce / checkout handoff
+      +--> Shopify-backed commerce / checkout handoff
       +--> Analytics and discoverability integrations
 
 See [docs/architecture.md](docs/architecture.md) for the public-safe architecture boundary.
