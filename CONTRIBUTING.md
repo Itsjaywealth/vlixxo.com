@@ -11,6 +11,7 @@ This public repository is intentionally limited to public-safe documentation and
 - Do not include private infrastructure endpoints or supplier/payment authentication details.
 - Keep examples sanitized and use placeholders only.
 - Run a secret scan before submitting changes when possible.
+- Run `npm test` when changing the storefront or application entry points.
 
 ## Security issues
 
