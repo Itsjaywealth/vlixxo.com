@@ -24,6 +24,7 @@ The current product includes:
 - Responsive desktop and mobile layouts
 - Shipping, delivery, return and policy information
 - Analytics and commerce attribution
+- Optional error monitoring and product analytics
 - Search-engine discoverability and structured product metadata
 
 ## Technology
@@ -55,6 +56,7 @@ The public architecture is intentionally documented at a high level:
       +--> Search and visual-search services
       +--> Shopify-backed commerce / checkout handoff
       +--> Analytics and discoverability integrations
+      +--> Optional error monitoring
 
 See [docs/architecture.md](docs/architecture.md) for the public-safe architecture boundary.
 
@@ -87,6 +89,14 @@ See [SECURITY.md](SECURITY.md) and [docs/security-boundary.md](docs/security-bou
 ## Configuration examples
 
 [.env.example](.env.example) contains variable names/placeholders only. It is documentation, not a production configuration file.
+
+## Error monitoring and analytics
+
+Error monitoring and product analytics are optional. They activate only when the matching environment variables are set, and they stay inactive when those variables are missing. Trace sampling stays at 0.1, and session replay stays off.
+
+The React storefront reads the public `VITE_` variables. The Node.js application reads the server variables. Do not commit real values.
+
+`npm test` checks the instrumentation. `npm run dev` starts the storefront, and `npm start` starts the application server.
 
 ## BrandVerse Ventures Limited
 

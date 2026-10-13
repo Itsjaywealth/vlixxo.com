@@ -23,4 +23,4 @@ Vlixxo includes search-engine-oriented product metadata and public discovery sur
 
 ## Scope of this repository
 
-This repository documents the product without publishing the private production implementation, credentials or operational data.
+This repository documents the product without publishing the private production implementation, credentials or operational data. Optional storefront and server entry points for error monitoring and product analytics are included. They stay inactive unless configuration is provided outside the repository.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-13
+
+- Added optional error monitoring and product analytics for the storefront and application server. Both stay inactive when configuration is absent, trace sampling is 0.1, and session replay is off.
+
 ## 2026-10-08
 
 - Clarified that storefront screenshots show a region-specific view; Vlixxo serves shoppers across supported markets with region-based pricing and delivery details.
