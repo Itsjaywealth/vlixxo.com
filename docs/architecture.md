@@ -4,7 +4,7 @@ This document describes Vlixxo at a deliberately high level. It is not an infras
 
 ## Application shape
 
-The production product uses a React/Vite customer interface backed by a Node.js/Express application layer. Product and catalogue data are persisted in a MongoDB-backed data layer, while commerce flows integrate with Shopify for supported checkout operations.
+The production product uses a React/Vite customer interface backed by a Node.js/Express application layer. Product and catalogue data are persisted in a document-database-backed data layer, while commerce flows integrate with a commerce platform for supported checkout operations.
 
 This public repository includes optional storefront and application entry points for error monitoring and product analytics. Both stay inactive when their environment variables are unset. Trace sampling is limited to 0.1, and session replay is off. Production credentials remain outside the repository.
 
