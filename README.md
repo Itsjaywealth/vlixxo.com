@@ -35,8 +35,8 @@ Verified high-level technologies used by the production application include:
 - Vite
 - Node.js
 - Express
-- MongoDB with Mongoose
-- Shopify commerce integration
+- Document database
+- Commerce platform integration
 
 Production credentials, supplier authentication, payment secrets, database credentials and deployment configuration are deliberately excluded from this repository.
 
@@ -54,7 +54,7 @@ The public architecture is intentionally documented at a high level:
       |
       +--> Catalogue and product data
       +--> Search and visual-search services
-      +--> Shopify-backed commerce / checkout handoff
+      +--> Commerce-platform-backed checkout handoff
       +--> Analytics and discoverability integrations
       +--> Optional error monitoring
 
